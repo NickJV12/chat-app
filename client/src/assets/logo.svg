@@ -1,0 +1,26 @@
+<svg width="100%" height="120" viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cute chat bubble -->
+  <rect x="10" y="25" width="70" height="55" rx="20" fill="url(#gradSoft)"/>
+  <polygon points="30,80 45,80 35,95" fill="url(#gradSoft)"/>
+
+  <!-- Message dots -->
+  <circle cx="30" cy="52" r="4" fill="white"/>
+  <circle cx="45" cy="52" r="4" fill="white"/>
+  <circle cx="60" cy="52" r="4" fill="white"/>
+
+  <!-- Text -->
+  <text x="95" y="70"
+        font-family="Poppins, Segoe UI, Arial"
+        font-size="38"
+        font-weight="600"
+        fill="url(#gradSoft)">
+    Wanna Chat?
+  </text>
+</svg>
