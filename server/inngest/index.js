@@ -11,7 +11,13 @@ const syncUserCreation = inngest.createFunction(
   },
     async({event})=>{
         const {id, first_name, last_name, email_addresses, image_url} = event.data
-        let username = email_addresses[0].email_addresses.split('@')[0]
+        const email = email_addresses?.[0]?.email_address
+
+         if (!email) {
+              throw new Error("Email not found in Clerk event")  
+              } 
+
+           let username = email.split('@')[0]
 
         //Check availabilty of username
         const user = await User.findOne({username})
